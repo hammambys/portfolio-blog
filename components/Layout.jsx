@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Footer } from './Footer';
 import Header from './Header';
 
-const Layout = ({ children }) => (
-  <>
+function Layout ({ children }) { 
+  
+  const [darkMode, setDarkMode] = useState(false);
+  return(
+
+  <div className={` ${darkMode && "dark"}`} >
+    <div className='bg-sand_dollar dark:bg-carafe transition duration-500'>
+    <button className='absolute' onClick={()=>setDarkMode(!darkMode)}>
+            {darkMode ? "ON" : "OFF"}
+    </button>
     <Header />
     {children}
-  </>
-);
+    <Footer />
+    </div>
+  </div>
 
+);
+  }
 export default Layout;
