@@ -61,46 +61,10 @@ a {
   box-sizing: border-box;
 }
 
-.about_img {
-  background-image: url("../public/profil.jpg");
-  background-position: center;
-  background-size: cover;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: #A47551 5px solid;
-  flex-shrink: 0;
-  margin: 10px 30px 10px 10px;
-}
 
-.portfolioList {
-  font-size: 14px;
-  margin-right: 50px;
-  padding: 7px;
-  border-radius: 10px;
-  cursor: pointer;
 
-  
 
-  &.active {
-    background-color: #A47551;
-    color: white;
-  }
-}
 
-.portfolio-item{
-  display: flex;
-  justify-content: space-around;
-}
-.portfolio-item-details{
-width:50%;
-margin-top: 5%;
-position: relative;
-  margin-left: 1%;
-  margin-bottom: 5%;
-  z-index: 1;
-
-}
 
 
 

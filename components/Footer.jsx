@@ -7,7 +7,7 @@ export const Footer = () => {
     <div className='text-center  h-64 flex items-center justify-center'>
       <ul className="flex ">
           <li className='mr-5'>
-            <a href="https://www.linkedin.com/in/hammam-ben-younes-547869177/"  target="_blank">
+            <a href="https://www.linkedin.com/in/hammam-ben-younes-547869177/" className='text-white' target="_blank">
               <Image 
               src="https://img.icons8.com/ios-glyphs/60/000000/linkedin-circled--v1.png" 
               width={45}

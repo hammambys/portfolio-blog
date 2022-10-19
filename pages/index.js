@@ -33,9 +33,7 @@ export default function Home() {
         <Work />
       </section>
       <section className="mb-32">
-        <div className="mb-8 text-center text-2xl text-carafe">
-          Recent Posts
-        </div>
+        <div className="mb-8 text-center text-2xl ">Recent Posts</div>
         <RecentPosts />
       </section>
       <section>
