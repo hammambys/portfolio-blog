@@ -1,20 +1,20 @@
 import React from 'react'
 import Image from 'next/image';
+import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
 
 
-export const PortfolioItem = ({item}) => {
+export const PortfolioItem = ({item,id}) => {
   return (
-    <div className="flex justify-between mb-16">
-            <div className="">
-              <h1 className="mb-4">Project #{item.id}</h1>
+    <div className="flex  mb-28">
+            <div className="w-1/2 mr-8">
+              <h1 className="mb-4">Project #{id+1}</h1>
               <h3 className="font-bold text-2xl mb-8">{item.title}</h3>
-              <div className="">
-                <div className="bg-carafe dark:border text-tan p-5  mr-8">
+                <div className="bg-carafe dark:border text-tan p-5  ">
                   <p className="">{item.description}</p>
                   <p>Features :</p>
                   <ul className=''>
                     {item.features.map((feature)=>(
-                        <li className=''>{feature}</li>
+                        <li className=''>- {feature}</li>
                     ))}
                   </ul>
                 </div>
@@ -25,17 +25,26 @@ export const PortfolioItem = ({item}) => {
                       </div>
                     ))}
                 </div>
-              </div>
+                <div className='links flex p-5 '>
+                  {item.link &&<a href={item.link} target="_blank" className='mr-5'>
+                   <AiOutlineLink size={30} />
+                  </a>}
+                  {item.source && <a href={item.source} target="_blank">
+                   <AiFillGithub size={30} />
+                  </a>}
+
+                </div>
             </div>
-            <div className="">
-              <a href={item.url} target="_blank">
+            <div className="pt-10">
+              <a href={item.url} target="_blank" >
 
                <Image
-                src={item.img}
+                src={item.img ? item.img:"placeholder.jpg"}
                 alt={item.title}
                 width={600}
                 height={450}
                 unoptimized
+                objectFit='fill'
                 />
               </a>
             </div>            

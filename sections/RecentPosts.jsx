@@ -15,7 +15,7 @@ export default function RecentPosts() {
   }, []);
   return (
     <div>
-        <div className='flex'>
+        <div className='flex '>
         {dataLoaded && previousPosts.map((post, index) => (
           <RecentPostCard key={index} post={post} />
         ))}        

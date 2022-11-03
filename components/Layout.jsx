@@ -9,7 +9,7 @@ function Layout ({ children }) {
 
   <div className={` ${darkMode && "dark"}`} >
     <div className='bg-sand_dollar dark:bg-carafe transition duration-500'>
-    <button className='absolute' onClick={()=>setDarkMode(!darkMode)}>
+    <button className='sticky top-0' onClick={()=>setDarkMode(!darkMode)}>
             {darkMode ? "ON" : "OFF"}
     </button>
     <Header />

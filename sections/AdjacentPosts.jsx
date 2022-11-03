@@ -15,7 +15,7 @@ const AdjacentPosts = ({ createdAt, slug }) => {
   }, [slug]);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-8 gap-12 mb-8">
+    <div className="grid grid-cols-1 lg:grid-cols-8 gap-12 mb-8 border dark:text-sand_dollar">
       {dataLoaded && (
         <>
           {adjacentPost.previous && (

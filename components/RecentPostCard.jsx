@@ -5,7 +5,7 @@ import { grpahCMSImageLoader } from '../util'
 
 export const RecentPostCard = ({post}) => {
   return (
-    <div class="flex-1  m-5 rounded overflow-hidden shadow-lg border-2 border-carafe text-carafe dark:text-sand_dollar dark:border-tan">
+    <div class="w-[370px] m-5 rounded overflow-hidden shadow-lg border-2 border-carafe text-carafe dark:text-sand_dollar dark:border-tan">
 <a href={`/post/${post.slug}`}>
 
       <Image

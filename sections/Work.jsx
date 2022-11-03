@@ -16,7 +16,7 @@ export default function Work() {
       <h1 className="mb-16 text-3xl text-center">Portfolio</h1>      
         {
           portfolioItems.map((item,index)=>(
-            <PortfolioItem key={index}  item={item} />
+            <PortfolioItem key={index}  item={item} id={index} />
           ))
         }
     </div>
