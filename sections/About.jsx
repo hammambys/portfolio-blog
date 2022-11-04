@@ -1,7 +1,6 @@
-import React from "react";
-import {about} from "../data.js";
+import React from 'react';
 import Image from 'next/image';
-
+import { about } from '../data.js';
 
 export default function About() {
   return (
@@ -10,7 +9,7 @@ export default function About() {
       <div className="p-10">
         <div className="flex justify-between">
           <div className="mr-5 p-1 border">
-            <Image  src={about.img} width={500} height={600} className="opacity-75 grayscale "/>
+            <Image src={about.img} width={500} height={600} className="opacity-75 grayscale " />
           </div>
           <div className="m-5">
             <p className="mb-10 ">
