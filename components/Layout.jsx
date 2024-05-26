@@ -9,7 +9,7 @@ function Layout({ children }) {
       <div className="bg-sand_dollar dark:bg-carafe transition duration-500">
         <button
           type="button"
-          className="sticky top-0"
+          className=" top-0 absolute"
           onClick={() => setDarkMode(!darkMode)}
         >
           {darkMode && (

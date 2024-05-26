@@ -3,8 +3,9 @@ import Link from "next/link";
 import { AiFillLinkedin, AiFillGithub, AiFillFacebook } from "react-icons/ai";
 
 const Header = () => (
-  <div className="container mx-auto px-10 mb-8">
+  <div className="container mx-auto px-10 mb-8 pt-3">
     <div className="border-b w-full inline-block border-carafe dark:border-sand_dollar pb-8 flex justify-between">
+      <div></div>
       <div className="flex items-center justify-center">
         <Link href="/">
           <span className="text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle    cursor-pointer font-bold">
@@ -70,7 +71,7 @@ const Header = () => (
               </svg>
             </a>
           </li>
-          <li className="">
+          <li className="mr-7">
             <a
               href="https://www.facebook.com/hammam.bn.younes/"
               className="w-32  text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown cursor-pointer"
