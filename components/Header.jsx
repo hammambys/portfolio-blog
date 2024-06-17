@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AiFillLinkedin, AiFillGithub, AiFillFacebook } from "react-icons/ai";
 
 const Header = () => (
-  <div className="container mx-auto px-10 mb-8 pt-3">
+  <div className="container mx-auto p-5 mb-8">
     <div className="border-b w-full inline-block border-carafe dark:border-sand_dollar pb-8 flex justify-between">
       <div></div>
       <div className="flex items-center justify-center">

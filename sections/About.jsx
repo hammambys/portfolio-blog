@@ -5,6 +5,8 @@ import { about } from "../data.js";
 export default function About() {
   return (
     <div className="container mx-auto px-10 mb-8 " id="about">
+      <p className="mb-10 text-center text-3xl ">About Me</p>
+
       <div className="p-10">
         <div className="flex justify-between">
           <div className="mr-5 p-1 border">
