@@ -1,4 +1,3 @@
-import Link from "next/link";
 import About from "../sections/About";
 import Contact from "../sections/Contact";
 import RecentPosts from "../sections/RecentPosts";

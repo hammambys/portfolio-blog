@@ -60,7 +60,7 @@ export default function ProjectDetails() {
             {project.source && (
               <a
                 href={project.source}
-                className="hover:underline"
+                className="bg-black hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
