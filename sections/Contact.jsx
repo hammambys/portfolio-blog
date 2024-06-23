@@ -38,14 +38,13 @@ export default function Contact() {
       {/*<h1 className="text-3xl  mb-8 text-center">Contact</h1>*/}
       <div className="flex justify-center">
         <div className="w-1/4 mr-5">
-          <h2>Let's chat</h2>
           <p>
             If you're up to meet in-person, virtual meeting or just a quick
             chat, hit me up on social media or drop me a message here!
           </p>
         </div>
         <div className="w-3/4 ml-5">
-          <form onSubmit={handleSubmit} className="mx-auto p-6 bg-white">
+          <form onSubmit={handleSubmit} className="mx-auto px-6 bg-white">
             <div className="mb-4">
               <label
                 htmlFor="name"
@@ -59,7 +58,7 @@ export default function Contact() {
                 id="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                className="text-carafe mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                 required
               />
             </div>
@@ -76,14 +75,14 @@ export default function Contact() {
                 id="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm text-carafe"
                 required
               />
             </div>
             <div className="mb-4">
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-700 "
               >
                 Message
               </label>
@@ -92,7 +91,7 @@ export default function Contact() {
                 id="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                className="text-carafe mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                 rows="4"
                 required
               ></textarea>
@@ -100,7 +99,7 @@ export default function Contact() {
             <div className="text-right">
               <button
                 type="submit"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="p-3 bg-carafe text-sand_dollar hover:bg-brown transition duration-500 rounded dark:border"
               >
                 Send
               </button>

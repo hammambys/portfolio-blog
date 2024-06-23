@@ -9,7 +9,7 @@ export default function About() {
 
       <div className="p-10">
         <div className="flex justify-between">
-          <div className="mr-5 p-1 border">
+          <div className="w-1/4 mr-5 p-1 border">
             <Image
               src={about.img}
               width={500}
@@ -17,10 +17,10 @@ export default function About() {
               className="opacity-75 grayscale "
             />
           </div>
-          <div className="m-5">
+          <div className="w-3/4 m-5">
             <p className="mb-10 ">{about.text}</p>
             <a
-              href="/contact"
+              href="#contact"
               className="p-4 bg-carafe text-sand_dollar hover:bg-brown transition duration-500 rounded dark:border  "
             >
               Get in touch

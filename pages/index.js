@@ -10,7 +10,7 @@ export default function Home() {
     <div className="container mx-auto p-10 mb-10 text-carafe dark:text-sand_dollar ">
       <section className="flex justify-between align-items-center">
         <div className="mb-32 p-8">
-          <div className="text-7xl py-5">Hi ! I&lsquo;m Hammem 👋</div>
+          <div className="text-7xl pb-5">Hi ! I&lsquo;m Hammem 👋</div>
           <div className="text-xl py-5">
             Software Engineer, also building amazing websites and apps for my
             clients ✨
@@ -38,8 +38,10 @@ export default function Home() {
             </Link>
 </div>*/}
         </div>
-        <div>
-          <Image src="/avatar.png" width={250} height={250} />
+        <div className="">
+          <div>
+            <Image src="/avatar.png" width={200} height={200} />
+          </div>
         </div>
       </section>
       <section>

@@ -12,17 +12,19 @@ export default function ProjectDetails() {
   }
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 text-carafe dark:text-sand_dollar">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         {project.img && (
           <div className="relative">
             <img
               src={project.img}
               alt={project.title}
-              className="w-full h-64 object-cover opacity-50"
+              className="w-full h-64 object-cover opacity-40"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-              <h1 className="text-4xl text-white font-bold">{project.title}</h1>
+            <div className="absolute inset-0  flex items-center justify-center">
+              <div className="text-4xl bg-white	 font-bold shadow-xl">
+                {project.title}
+              </div>
             </div>
           </div>
         )}
@@ -58,7 +60,7 @@ export default function ProjectDetails() {
             {project.source && (
               <a
                 href={project.source}
-                className="text-blue-500 hover:underline"
+                className="hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
