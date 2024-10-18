@@ -11,7 +11,7 @@ export default function Work() {
 
   return (
     <div className="container mx-auto  mb-8 w-full    " id="work">
-      <h1 className="mb-16 text-3xl text-center">Some of my work</h1>
+      <h1 className="py-16 text-3xl text-center">Some of my work</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {portfolioItems.map((item, index) => (
