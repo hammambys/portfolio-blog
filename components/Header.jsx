@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { AiFillLinkedin, AiFillGithub, AiFillFacebook } from "react-icons/ai";
 
 const Header = () => (
   <div className="container mx-auto p-5 mb-8 scroll-smooth">
@@ -60,7 +59,7 @@ const Header = () => (
               target="_blank"
             >
               <svg
-                class="bi bi-github"
+                className="bi bi-github"
                 fill="currentColor"
                 height="40"
                 viewBox="0 0 16 16"

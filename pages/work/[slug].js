@@ -12,8 +12,8 @@ export default function ProjectDetails() {
   }
 
   return (
-    <div className="container mx-auto p-6 text-carafe dark:text-sand_dollar">
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+    <div className="container mx-auto p-6 flex justify-center  text-carafe dark:text-sand_dollar">
+      <div className="w-3/4  border-2">
         {project.img && (
           <div className="relative">
             <img
@@ -28,14 +28,14 @@ export default function ProjectDetails() {
             </div>
           </div>
         )}
-        <div className="p-6">
-          <p className="text-gray-700 text-lg mb-4">{project.description}</p>
+        <div className="p-6 font-normal">
+          <p className="text-gray-700 text-lg mb-4 ">{project.description}</p>
 
           <div className="mb-8">
             <h2 className="text-2xl font-semibold mb-2">Features</h2>
             <ul className="list-disc list-inside">
               {project.features.map((feature, index) => (
-                <li key={index} className="text-gray-700">
+                <li key={index} className="text-gray-700 ">
                   {feature}
                 </li>
               ))}
@@ -64,7 +64,7 @@ export default function ProjectDetails() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Source Code
+                {project.source}
               </a>
             )}
             {project.link && (
@@ -74,16 +74,14 @@ export default function ProjectDetails() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Demo
+                {project.link}
               </a>
             )}
           </div>
 
           <div className="mt-8">
-            <Link href="/#work">
-              <a className="text-blue-500 hover:underline">
-                ← Back to Projects
-              </a>
+            <Link href="/#work"  className="text-white">
+               <p>← Back to projects</p> 
             </Link>
           </div>
         </div>

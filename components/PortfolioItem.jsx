@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
+import Link from "next/link";
 
 export const PortfolioItem = ({ item, id }) => (
-  <div className="w-[370px] m-5 rounded overflow-hidden shadow-lg border-2 border-carafe text-carafe dark:text-sand_dollar dark:border-tan">
-    <a href={`/work/${item.slug}`}>
+  <div className="w-[370px] m-5 border-2 border-carafe text-carafe dark:text-sand_dollar dark:border-tan ">
+    <Link href={`/work/${item.slug}`}>
       <Image
         src={item.img ? item.img : "/placeholder.jpg"}
         height={200}
@@ -12,10 +12,10 @@ export const PortfolioItem = ({ item, id }) => (
         alt={item.title}
         className=""
       />
-      <div className="px-6 py-4">
+      <div className="px-6 py-4 hover:text-red">
         <div className="font-bold text-xl  mb-2">{item.title}</div>
         <p className=" text-base ">{item.summary}</p>
       </div>
-    </a>
+    </Link>
   </div>
 );

@@ -25,16 +25,6 @@ export const portfolio = [
     slug: "manageme",
   },
   {
-    title: "Vehicle Detection System",
-    summary:
-      "Detect object of interest (Car) in video frames and count number of cars detected.",
-    description: "",
-    features: ["Detect cars in highway"],
-    tools: ["Python", "OpenCV"],
-    source: "https://github.com/hammambys/road-cars-tracking",
-    slug: "vehicle-detection",
-  },
-  {
     title: "Landing page - Association Robotique ENSI",
     img: "/are.PNG",
     summary:
@@ -42,7 +32,7 @@ export const portfolio = [
     description:
       "I was involved with two college peers in the design and development of the official website for the Association Robotique ENSI. The landing page features a sleek and modern design, reflecting the innovative spirit of the association. It includes a contact form to facilitate communication with members and visitors.",
     features: ["Beautiful design", "Contact form"],
-    tools: ["React", "Figma"],
+    tools: ["React", "Figma","Bootstrap"],
     link: "http://www.ar-ensi.tn/",
     slug: "landing-page-are",
   },

@@ -26,7 +26,7 @@ export default function Contact() {
       body: JSON.stringify(formData),
     });
     if (response.ok) {
-      alert("Message sent successfully!");
+      alert("Thank you for reaching out! Will respond as soon as possible");
       setFormData({ name: "", email: "", message: "" });
     } else {
       alert("Failed to send message");

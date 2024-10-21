@@ -15,7 +15,7 @@ function Layout({ children }) {
           {darkMode && (
             <div className="pt-4">
               <svg
-                enable-background="new 0 0 512 512"
+                enableBackground="new 0 0 512 512"
                 height="50px"
                 viewBox="0 0 512 512"
                 width="50px"
@@ -30,7 +30,7 @@ function Layout({ children }) {
           {!darkMode && (
             <div className="pt-4">
               <svg
-                enable-background="new 0 0 512 512"
+                enableBackground="new 0 0 512 512"
                 height="48px"
                 viewBox="0 0 512 512"
                 width="48px"
