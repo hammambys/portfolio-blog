@@ -56,3 +56,15 @@ export const portfolio = [
     slug: "mumia",
   },
 ];
+
+export const experience = [
+  {
+    date: "2023 — Present",
+    title: "Software Engineer",
+    company: "FIS",
+    description: "Worked with the UBIX Bespoke team to develop and maintain custom enhancements in UBIX software for 10+ clients in financial sector around the world",
+    project: "UBIX",
+    platform: "Desktop",
+    technologies: ["Python", "PL/SQL"],
+  }
+];
