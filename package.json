@@ -7,7 +7,7 @@
   },
   "engineStrict": true,
   "scripts": {
-    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && next dev",
+    "dev": " next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

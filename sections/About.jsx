@@ -8,7 +8,7 @@ export default function About() {
       <p className="py-10 text-center text-3xl ">About Me</p>
 
       <div className="p-10">
-        <div className="flex justify-between">
+        <div className="flex justify-center">
           <div className="w-1/4 mr-5 p-1 border">
             <Image
               src={about.img}
@@ -17,8 +17,8 @@ export default function About() {
               className="opacity-75 grayscale "
             />
           </div>
-          <div className="w-3/4 m-5">
-            <p className="mb-10 ">{about.text}</p>
+          <div className="w-1/2 m-5">
+            <p className="mb-10  font-normal">{about.text}</p>
             <a
               href="#contact"
               className="p-4 bg-carafe text-sand_dollar hover:bg-brown transition duration-500 rounded dark:border  "

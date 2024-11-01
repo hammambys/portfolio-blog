@@ -9,17 +9,23 @@ export default function Experience() {
   }, []);
 
   return (
-    <div>
+    <div className="">
     <h1 className="py-16 text-3xl text-center">Experience</h1>
+      <div className="">
 
       {experiences.map((experience, index) => (
-        <div key={index} className="space-y-2">
-          <p className="text-sm text-gray-400">{experience.date}</p>
-          <h3 className="text-xl font-semibold">
+        <div key={index} className=" flex justify-around w-1/2">
+          <div className="w-1/2">
+
+            <p className="text-sm text-gray-400">{experience.date}</p>
+          </div>
+          <div>
+
+          <h3 className="">
             {experience.title} ·{" "}
-            <span className="text-indigo-400">{experience.company}</span>
+            <span className="">{experience.company}</span>
           </h3>
-          <p className="text-gray-300">{experience.description}</p>
+          <p className="font-normal">{experience.description}</p>
           <div className="flex flex-wrap items-center gap-3 mt-2">
             {experience.platform && (
               <span className="text-white px-3 py-1 rounded-md text-xs">
@@ -34,11 +40,12 @@ export default function Experience() {
             {experience.technologies.map((tech, i) => (
               <span
                 key={i}
-                className=" px-3 py-1 rounded-md text-xs"
+                className=" px-3 py-1 rounded-md text-xs "
               >
                 {tech}
               </span>
             ))}
+          </div>
           </div>
         </div>
       ))}
@@ -47,6 +54,7 @@ export default function Experience() {
           View Full Résumé
         </a>
       </div>
+            </div>
     </div>
   );
 }

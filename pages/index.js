@@ -10,14 +10,14 @@ export default function Home() {
     <div className="container mx-auto p-10 text-carafe dark:text-sand_dollar ">
       <section className="flex justify-center align-items-center h-screen">
         <div className="mb-32 p-8">
-          <div className="text-7xl pb-5">Hi ! I&lsquo;m Hammem 👋</div>
-          <div className="text-xl py-5">
+          <div className="text-5xl pb-5">Hi ! I&lsquo;m Hammem 👋</div>
+          <div className="text-xl py-5 font-normal">
             Software Engineer, also building amazing websites and apps for my
             clients ✨
           </div>
-          <div className="flex">Based in Tunis, Tunisia </div>
+          <div className="font-normal">Based in Tunis, Tunisia </div>
         </div>
-        <div className="">
+        <div>
           <div>
             <Image src="/avatar.png" width={200} height={200} />
           </div>
@@ -26,13 +26,13 @@ export default function Home() {
       <section>
         <About />
       </section>
-      <section>
+      <section className="flex justify-center">
         <Experience />
       </section>
       <section>
         <Work />
       </section>
-      <section className="h-screen">
+      <section>
         <RecentPosts />
       </section>
       <section>

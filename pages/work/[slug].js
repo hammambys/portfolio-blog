@@ -15,20 +15,20 @@ export default function ProjectDetails() {
     <div className="container mx-auto p-6 flex justify-center  text-carafe dark:text-sand_dollar">
       <div className="w-3/4  border-2">
         {project.img && (
-          <div className="relative">
+          <div className="">
             <img
-              src={project.img}
+              src= {"/images/" + project.img}
               alt={project.title}
               className="w-full h-64 object-cover opacity-40"
             />
-            <div className="absolute inset-0  flex items-center justify-center">
-              <div className="text-4xl bg-white	 font-bold shadow-xl">
-                {project.title}
-              </div>
-            </div>
           </div>
         )}
         <div className="p-6 font-normal">
+        <div className="   flex items-center justify-center">
+              <div className="text-2xl bg-white	 font-bold mb-8">
+                {project.title}
+              </div>
+            </div>
           <p className="text-gray-700 text-lg mb-4 ">{project.description}</p>
 
           <div className="mb-8">

@@ -10,15 +10,16 @@ export const portfolio = [
   {
     title: "Manageme - E-learning platform",
     img: "/manageme.PNG",
-    summary:
-      "Web app to administer, document, track, and report on training programs.",
     description:
-      "Manageme is a comprehensive web application designed to administer, document, track, and report on training programs and educational courses. This platform supports multiple content types, allowing educators and trainers to create a rich, interactive learning experience. It enables users to generate their own content, providing a collaborative and customizable learning environment.",
+      `This was an academic project at the end of second year in college which is an e-learning platform designed to manage training programs and educational courses related to project management. 
+      This platform supports multiple content types, allowing educators and trainers to create a rich, interactive learning experience.
+      It enables users to generate their own content, providing a collaborative learning environment.`,
     features: [
+      "E-learning platform",
+      "Course management",
+      "Interactive learning experience",
+      "Content creation tools",
       "Support of multiple content types (e.g., text, audio, images, video)",
-      "User-generated content",
-      "Structured storage of learning materials",
-      "Course creation tools",
     ],
     tools: ["Angular", "Spring boot", "MySQL"],
     source: "https://github.com/hammambys/manageme",
@@ -27,11 +28,10 @@ export const portfolio = [
   {
     title: "Landing page - Association Robotique ENSI",
     img: "/are.PNG",
-    summary:
-      "Design and development of the official website of Association Robotique ENSI",
     description:
-      "I was involved with two college peers in the design and development of the official website for the Association Robotique ENSI. The landing page features a sleek and modern design, reflecting the innovative spirit of the association. It includes a contact form to facilitate communication with members and visitors.",
-    features: ["Beautiful design", "Contact form"],
+      `This is my first real-world coding project while I was in college. Which is the design and development of the official website for the Association Robotique ENSI. 
+      The landing page features a modern design, reflecting the innovative spirit of the association.`,
+    features: ["Landing page", "Contact form","Photo gallery"],
     tools: ["React", "Figma","Bootstrap"],
     link: "http://www.ar-ensi.tn/",
     slug: "landing-page-are",
@@ -39,9 +39,11 @@ export const portfolio = [
   {
     title: "Mumia - Marketplace website",
     img: "/mumia.PNG",
-    summary: "Develop full marketplace website from scratch",
     description:
-      "Mumia is a fully-featured marketplace website designed from scratch to facilitate online buying and selling. This platform includes a range of features to enhance the user experience, such as a streamlined signup/signin process, vendor dashboards, and integrated payment systems. It is designed to be mobile-friendly, ensuring accessibility across all devices.",
+      `This is a fun project i did which consists of cloning jumia.com, a popular e-commerce platform in my region. 
+      This project is fully-featured marketplace website designed from scratch to facilitate online buying and selling. 
+      It includes a range of features to enhance the user experience, such as a streamlined signup/signin process, vendor dashboards, and integrated payment systems. 
+      It is designed to be mobile-friendly, ensuring accessibility across all devices.`,
     features: [
       "Payment system (Stripe,Paypal)",
       "Simple signup/signin process",
@@ -51,7 +53,7 @@ export const portfolio = [
       "Payment gateways(stripe,paypal)",
       "Ratings & Reviews",
     ],
-    tools: ["MongoDB", "React", "Redux", "Express", "Node.js"],
+    tools: ["MongoDB", "React", "Redux", "Express.js", "Node.js"],
     source: "https://github.com/hammambys/mumia-app",
     slug: "mumia",
   },
@@ -63,8 +65,6 @@ export const experience = [
     title: "Software Engineer",
     company: "FIS",
     description: "Worked with the UBIX Bespoke team to develop and maintain custom enhancements in UBIX software for 10+ clients in financial sector around the world",
-    project: "UBIX",
-    platform: "Desktop",
     technologies: ["Python", "PL/SQL"],
   }
 ];

@@ -6,7 +6,7 @@ export const PortfolioItem = ({ item, id }) => (
   <div className="w-[370px] m-5 border-2 border-carafe text-carafe dark:text-sand_dollar dark:border-tan ">
     <Link href={`/work/${item.slug}`}>
       <Image
-        src={item.img ? item.img : "/placeholder.jpg"}
+        src={item.img ?   item.img : "/images/placeholder.jpg"}
         height={200}
         width={370}
         alt={item.title}
