@@ -11,17 +11,17 @@ const Header = () => (
             Home
           </span>
         </Link>
-        <Link href="#about">
+        <Link href="/#about">
           <span className=" text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle  ml-16  cursor-pointer font-bold">
             About
           </span>
         </Link>
-        <Link href="#work">
+        <Link href="/#work">
           <span className="text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle  ml-16  cursor-pointer font-bold">
             Work
           </span>
         </Link>
-        <Link href="#contact">
+        <Link href="/#contact">
           <span className="text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle  ml-16  cursor-pointer font-bold">
             Contact
           </span>

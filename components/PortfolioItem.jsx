@@ -3,18 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const PortfolioItem = ({ item, id }) => (
-  <div className="w-[370px] m-5 border-2 border-carafe text-carafe dark:text-sand_dollar dark:border-tan ">
+  <div className=" m-5 border-2 border-carafe text-carafe dark:text-sand_dollar dark:border-tan ">
     <Link href={`/work/${item.slug}`}>
-      <Image
+    <div className="h-2/3">
+
+      <img
         src={item.img ?   item.img : "/images/placeholder.jpg"}
-        height={200}
-        width={370}
         alt={item.title}
-        className=""
+        className=" w-full h-full object-cover filter grayscale"
       />
-      <div className="px-6 py-4 hover:text-red">
+    </div>
+
+      <div className="px-6 py-4 h-1/3">
         <div className="font-bold text-xl  mb-2">{item.title}</div>
-        <p className=" text-base ">{item.summary}</p>
       </div>
     </Link>
   </div>

@@ -14,16 +14,16 @@ export default function Experience() {
       <div className="">
 
       {experiences.map((experience, index) => (
-        <div key={index} className=" flex justify-around w-1/2">
-          <div className="w-1/2">
+        <div key={index} className=" flex justify-around w-1/2 mb-10">
+          <div className="w-1/3">
 
-            <p className="text-sm text-gray-400">{experience.date}</p>
+            <p className="text-sm">{experience.date}</p>
           </div>
-          <div>
+          <div className="w-2/3">
 
-          <h3 className="">
-            {experience.title} ·{" "}
-            <span className="">{experience.company}</span>
+          <h3 className="mb-3 ">
+            <a href={experience.link} target="_blank" className="hover:underline">{experience.title} ·{" "}
+            <span className="">{experience.company}</span></a>
           </h3>
           <p className="font-normal">{experience.description}</p>
           <div className="flex flex-wrap items-center gap-3 mt-2">

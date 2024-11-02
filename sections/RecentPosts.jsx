@@ -13,8 +13,8 @@ export default function RecentPosts() {
     });
   }, []);
   return (
-    <div className="mb-8">
-      <div className="mb-8 text-center text-3xl ">ِCheck out my blog</div>
+    <div className="mb-8 min-h-screen">
+      <div className="mb-8 text-center text-3xl  ">ِCheck out my blog</div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {dataLoaded &&

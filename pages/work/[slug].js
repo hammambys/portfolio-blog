@@ -12,26 +12,28 @@ export default function ProjectDetails() {
   }
 
   return (
-    <div className="container mx-auto p-6 flex justify-center  text-carafe dark:text-sand_dollar">
+    <div className="container mx-auto p-10 flex justify-center  text-carafe dark:text-sand_dollar">
       <div className="w-3/4  border-2">
-        {project.img && (
-          <div className="">
-            <img
-              src= {"/images/" + project.img}
-              alt={project.title}
-              className="w-full h-64 object-cover opacity-40"
-            />
-          </div>
-        )}
-        <div className="p-6 font-normal">
-        <div className="   flex items-center justify-center">
-              <div className="text-2xl bg-white	 font-bold mb-8">
-                {project.title}
-              </div>
-            </div>
-          <p className="text-gray-700 text-lg mb-4 ">{project.description}</p>
+        <div className="p-14 font-normal">
+          <div className="text-center">
 
-          <div className="mb-8">
+          <div className="text-2xl font-bold mb-8">
+            {project.title}
+          </div>
+          <div>
+            <div className="font-normal text-center text-lg my-4">{project.summary}</div>
+          </div>
+          <div className="py-8 border-b">
+
+          <a href={project.link} target="_blank" className="hover:underline ">{project.link}</a>
+          
+          <a href={project.source} target="_blank" className="hover:underline ">{project.source}</a>
+          
+          </div>
+          </div>
+          <p className=" text-lg my-8 ">{project.description}</p>
+
+          <div className="my-8">
             <h2 className="text-2xl font-semibold mb-2">Features</h2>
             <ul className="list-disc list-inside">
               {project.features.map((feature, index) => (
@@ -41,8 +43,20 @@ export default function ProjectDetails() {
               ))}
             </ul>
           </div>
+          <div className="my-8">
+            <h2 className="text-2xl font-semibold mb-2">Screenshots</h2>
+            {project.screenshots.map((screenshot, index) => (
+              <img
+                key={index}
+                src={screenshot}
+                alt={`Screenshot ${index + 1}`}
+                className="w-full mb-4"
+              />
+            ))}
 
-          <div className="mb-8">
+          </div>
+
+          <div className="my-8">
             <h2 className="text-2xl font-semibold mb-2">Tools</h2>
             <div className="flex flex-wrap">
               {project.tools.map((tool, index) => (
@@ -56,32 +70,11 @@ export default function ProjectDetails() {
             </div>
           </div>
 
-          <div className="flex justify-between">
-            {project.source && (
-              <a
-                href={project.source}
-                className="bg-black hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {project.source}
-              </a>
-            )}
-            {project.link && (
-              <a
-                href={project.link}
-                className="text-blue-500 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {project.link}
-              </a>
-            )}
-          </div>
+          
 
           <div className="mt-8">
-            <Link href="/#work"  className="text-white">
-               <p>← Back to projects</p> 
+            <Link href="/#work" className="text-white hover:underline">
+              <p className="">← Back to projects</p>
             </Link>
           </div>
         </div>
