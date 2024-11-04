@@ -12,9 +12,9 @@ export default function About() {
           <div className="w-1/4 mr-5 p-1 border">
             <Image
               src={about.img}
-              width={500}
-              height={600}
-              className="opacity-75 grayscale "
+              width={400}
+              height={400}
+              className="opacity-75 grayscale hover:opacity-100 hover:grayscale-0 transition duration-500 "
             />
           </div>
           <div className="w-1/2 m-5">

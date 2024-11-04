@@ -1,9 +1,8 @@
-import Image from 'next/image';
 import React from 'react';
 import { grpahCMSImageLoader } from '../util';
 
 export const RecentPostCard = ({ post }) => (
-  <div className=" m-5 rounded overflow-hidden shadow-lg border-2 border-carafe text-carafe dark:text-sand_dollar dark:border-tan">
+  <div className=" border-2 border-carafe text-carafe dark:text-sand_dollar dark:border-tan hover:border-brown hover:text-brown transition duration-500 dark:hover:text-brown dark:hover:border-brown">
     <a href={`/post/${post.slug}`}>
       <div className='h-2/3'>
 
@@ -11,7 +10,7 @@ export const RecentPostCard = ({ post }) => (
         loader={grpahCMSImageLoader}
         
         alt={post.title}
-        className="object-cover w-full h-full filter grayscale"
+        className="object-cover w-full h-full filter grayscale hover:grayscale-0 transition duration-500"
         src={post.featuredImage.url}
       />
       </div>
