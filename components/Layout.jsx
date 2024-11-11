@@ -3,11 +3,16 @@ import { Footer } from "./Footer";
 import Header from "./Header";
 
 function Layout({ children }) {
-  const [darkMode, setDarkMode] = useState(false);
+  //const [darkMode, setDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleDarkMode = (data) => {
+    setIsDarkMode(data); // Set the data received from child in state
+  };
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${isDarkMode && "dark"}`}>
       <div className="bg-sand_dollar dark:bg-carafe transition duration-500">
-        <button
+        {/*<button
           type="button"
           className=" top-0 absolute"
           onClick={() => setDarkMode(!darkMode)}
@@ -42,8 +47,8 @@ function Layout({ children }) {
               </svg>
             </div>
           )}
-        </button>
-        <Header />
+        </button>*/}
+        <Header sendDataToParent={handleDarkMode}/>
         {children}
         <Footer />
       </div>

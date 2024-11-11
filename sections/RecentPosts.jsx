@@ -16,7 +16,7 @@ export default function RecentPosts() {
     <div className="mb-8 min-h-screen">
       <div className="mb-8 text-center text-3xl  ">ِCheck out my blog</div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="md:grid grid-cols-1 grid-cols-3 gap-4">
         {dataLoaded &&
           previousPosts.map((post, index) => (
             <RecentPostCard key={index} post={post} />

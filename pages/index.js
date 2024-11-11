@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="container mx-auto p-10 text-carafe dark:text-sand_dollar ">
-      <section className=" h-screen">
+      <section className=" md:h-screen">
         <div className="flex justify-center align-items-center">
           <div className="mb-32 p-8">
             <div className="text-5xl pb-5 ">Hi ! I&lsquo;m Hammem 👋</div>
@@ -20,7 +20,7 @@ export default function Home() {
           </div>
           <div>
             <div>
-              <Image src="/images/avatar.png" width={200} height={200} />
+              <Image src="/images/avatar.png" width={200} height={200} className="invisible md:visible" />
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ export default function Experience() {
       <div className="">
 
       {experiences.map((experience, index) => (
-        <div key={index} className=" flex justify-around w-1/2 mb-10">
+        <div key={index} className=" flex justify-around md:w-1/2 mb-10 hover:bg-[#d6c0b0] dark:hover:bg-[#6e513b] p-3 transition duration-500 rounded ">
           <div className="w-1/3">
 
             <p className="text-sm">{experience.date}</p>

@@ -4,20 +4,19 @@ import { about } from "../data.js";
 
 export default function About() {
   return (
-    <div className="h-screen" id="about">
+    <div className="md:h-screen" id="about">
       <p className="py-10 text-center text-3xl ">About Me</p>
 
       <div className="p-10">
-        <div className="flex justify-center">
-          <div className="w-1/4 mr-5 p-1 border">
-            <Image
+        <div className="md:flex justify-center">
+          <div className="md:w-1/4 mr-5 p-1 border">
+            <img
               src={about.img}
-              width={400}
-              height={400}
-              className="opacity-75 grayscale hover:opacity-100 hover:grayscale-0 transition duration-500 "
+              
+              className="opacity-75 grayscale hover:opacity-100 hover:grayscale-0 transition duration-500 object-cover"
             />
           </div>
-          <div className="w-1/2 m-5">
+          <div className="md:w-1/2 m-5">
             <p className="mb-10  font-normal">{about.text}</p>
             <a
               href="#contact"

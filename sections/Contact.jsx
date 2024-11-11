@@ -37,14 +37,14 @@ export default function Contact() {
     <div className="container mx-auto px-10 mb-8 " id="contact">
       
     <h1 className="text-3xl  mb-8 text-center">Contact</h1>
-      <div className="flex justify-center">
-        <div className="w-1/4 mr-5">
+      <div className="md:flex md:justify-center">
+        <div className="md:w-1/4 m-5 font-normal">
           <p>
             If you're up to meet in-person, virtual meeting or just a quick
             chat, hit me up on social media or drop me a message here!
           </p>
         </div>
-        <div className="w-3/4 ml-5">
+        <div className="md:w-3/4 m-5">
           <form onSubmit={handleSubmit} className="mx-auto px-6 bg-white">
             <div className="mb-4">
               <label

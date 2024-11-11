@@ -36,6 +36,7 @@ module.exports = {
       },
       tan: "#D0B49F",
       sand_dollar: "#E4D4C8", // lightest
+      
     },
   },
   variants: {
