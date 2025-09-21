@@ -12,7 +12,7 @@ function Header ({sendDataToParent})  {
   }
   return <div className="container mx-auto p-5 mb-8 scroll-smooth  transition-colors">
     <div className="border-b w-full inline-block border-carafe dark:border-sand_dollar pb-8 flex justify-between">
-      <div>
+      <div className="hidden lg:block">
       <button
           type="button"
           className=" top-0 absolute"
@@ -50,36 +50,36 @@ function Header ({sendDataToParent})  {
           )}
         </button>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex flex-col  sm:flex-row  items-center justify-center">
         <Link href="/">
           <span className="text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle    cursor-pointer font-bold">
             Home
           </span>
         </Link>
         <Link href="/#about">
-          <span className=" text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle  ml-16  cursor-pointer font-bold">
+          <span className=" text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle  ml-0 sm:ml-16 cursor-pointer font-bold">
             About
           </span>
         </Link>
         <Link href="/#work">
-          <span className="text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle  ml-16  cursor-pointer font-bold">
+          <span className="text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle  ml-0 sm:ml-16   cursor-pointer font-bold">
             Work
           </span>
         </Link>
         <Link href="/#contact">
-          <span className="text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle  ml-16  cursor-pointer font-bold">
+          <span className="text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle  ml-0 sm:ml-16   cursor-pointer font-bold">
             Contact
           </span>
         </Link>
         <Link href="/blog">
-          <span className="text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle  ml-16  cursor-pointer font-bold">
+          <span className="text-carafe dark:text-sand_dollar hover:text-brown dark:hover:text-brown mt-2 align-middle  ml-0 sm:ml-16   cursor-pointer font-bold">
             Blog
           </span>
         </Link>
       </div>
 
-      <div className="text-center flex items-center justify-center">
-        <ul className="flex ">
+      <div className="text-center flex items-center justify-center ">
+        <ul className="flex  hidden sm:block">
           <li className="mr-7">
             <a
               href="https://www.linkedin.com/in/hammem-ben-younes-547869177/"

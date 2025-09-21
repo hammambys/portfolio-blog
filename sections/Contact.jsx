@@ -36,20 +36,20 @@ export default function Contact() {
   return (
     <div className="container mx-auto px-10 mb-8 " id="contact">
       
-    <h1 className="text-3xl  mb-8 text-center">Contact</h1>
-      <div className="md:flex md:justify-center">
-        <div className="md:w-1/4 m-5 font-normal">
+    <h1 className="text-3xl  mb-8 text-center font-bold">Contact</h1>
+      <div className="md:flex md:justify-center font-normal">
+        <div className="md:w-1/4 m-5 ">
           <p>
             If you're up to meet in-person, virtual meeting or just a quick
             chat, hit me up on social media or drop me a message here!
           </p>
         </div>
         <div className="md:w-3/4 m-5">
-          <form onSubmit={handleSubmit} className="mx-auto px-6 bg-white">
+          <form onSubmit={handleSubmit} className="mx-auto px-0 md:px-6 bg-white ">
             <div className="mb-4">
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm  text-gray-700"
               >
                 Name
               </label>
@@ -100,7 +100,7 @@ export default function Contact() {
             <div className="text-right">
               <button
                 type="submit"
-                className="p-3 bg-carafe text-sand_dollar hover:bg-brown transition duration-500 rounded dark:border"
+                className="p-3 bg-carafe text-sand_dollar hover:bg-brown transition duration-500 rounded dark:border w-full"
               >
                 Send
               </button>

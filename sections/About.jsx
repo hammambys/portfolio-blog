@@ -5,7 +5,7 @@ import { about } from "../data.js";
 export default function About() {
   return (
     <div className="md:h-screen" id="about">
-      <p className="py-10 text-center text-3xl ">About Me</p>
+      <p className="py-10 text-center text-3xl font-bold ">About Me</p>
 
       <div className="p-10">
         <div className="md:flex justify-center">
@@ -17,10 +17,10 @@ export default function About() {
             />
           </div>
           <div className="md:w-1/2 m-5">
-            <p className="mb-10  font-normal">{about.text}</p>
+            <p className="mb-10 font-normal">{about.text}</p>
             <a
               href="#contact"
-              className="p-4 bg-carafe text-sand_dollar hover:bg-brown transition duration-500 rounded dark:border  "
+              className="p-4 bg-carafe text-sand_dollar hover:bg-brown transition duration-500 rounded dark:border flex justify-center "
             >
               Get in touch
             </a>

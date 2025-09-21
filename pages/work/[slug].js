@@ -16,35 +16,53 @@ export default function ProjectDetails() {
       <div className="w-3/4  border-2">
         <div className="p-14 font-normal">
           <div className="text-center">
-
-          <div className="text-2xl font-bold mb-8">
-            {project.title}
-          </div>
-          <div>
-            <div className="font-normal text-center text-lg my-4">{project.summary}</div>
-          </div>
-          <div className="py-8 border-b">
-
-          <a href={project.link} target="_blank" className="hover:underline ">{project.link}</a>
-          
-          <a href={project.source} target="_blank" className="hover:underline ">{project.source}</a>
-          
-          </div>
+            <div className="text-2xl font-bold mb-8">{project.title}</div>
+            <div>
+              <div className="font-normal text-center text-lg my-4">
+                {project.summary}
+              </div>
+            </div>
+            <div className="py-8 border-b">
+              {project.link && (
+                <div className="font-semibold mb-2">
+                  <div>Website link 🔗</div>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    className="hover:underline "
+                  >
+                    {project.link}
+                  </a>
+                </div>
+              )}
+              {project.source && (
+                <div className="font-semibold mb-2">
+                  <div>Github link 🔗</div>
+                  <a
+                    href={project.source}
+                    target="_blank"
+                    className="hover:underline "
+                  >
+                    {project.source}
+                  </a>
+                </div>
+              )}
+            </div>
           </div>
           <p className=" text-lg my-8 ">{project.description}</p>
 
           <div className="my-8">
-            <h2 className="text-2xl font-semibold mb-2">Features</h2>
+            <h2 className="text-2xl font-semibold mb-6">Features</h2>
             <ul className="list-disc list-inside">
               {project.features.map((feature, index) => (
-                <li key={index} className="text-gray-700 ">
+                <li key={index} className="text-lg">
                   {feature}
                 </li>
               ))}
             </ul>
           </div>
           <div className="my-8">
-            <h2 className="text-2xl font-semibold mb-2">Screenshots</h2>
+            <h2 className="text-2xl font-semibold mb-6">Screenshots</h2>
             {project.screenshots.map((screenshot, index) => (
               <img
                 key={index}
@@ -53,11 +71,10 @@ export default function ProjectDetails() {
                 className="w-full mb-4"
               />
             ))}
-
           </div>
 
           <div className="my-8">
-            <h2 className="text-2xl font-semibold mb-2">Tools</h2>
+            <h2 className="text-2xl font-semibold mb-6">Tools</h2>
             <div className="flex flex-wrap">
               {project.tools.map((tool, index) => (
                 <span
@@ -69,8 +86,6 @@ export default function ProjectDetails() {
               ))}
             </div>
           </div>
-
-          
 
           <div className="mt-8">
             <Link href="/#work" className="text-white hover:underline">

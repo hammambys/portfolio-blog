@@ -15,7 +15,7 @@ export const PortfolioItem = ({ item, id }) => (
     </div>
 
       <div className="px-6 py-4 h-1/3">
-        <div className="font-bold text-xl  mb-2">{item.title}</div>
+        <div className="font-medium text-lg  mb-2">{item.title}</div>
       </div>
     </Link>
   </div>

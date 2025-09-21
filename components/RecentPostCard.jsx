@@ -2,7 +2,7 @@ import React from "react";
 import { grpahCMSImageLoader } from "../util";
 
 export const RecentPostCard = ({ post }) => (
-  <div className="w-[400px] md:w-auto m-5  border-2 border-carafe text-carafe dark:text-sand_dollar dark:border-tan hover:border-brown hover:text-brown transition duration-500 dark:hover:text-brown dark:hover:border-brown">
+  <div className="w-[400px] md:w-auto border-2 border-carafe text-carafe dark:text-sand_dollar dark:border-tan hover:border-brown hover:text-brown transition duration-500 dark:hover:text-brown dark:hover:border-brown">
     <a href={`/post/${post.slug}`}>
       <div className="md:h-2/3 h-1/4">
         <img

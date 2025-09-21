@@ -8,7 +8,25 @@ export const about = {
 
 export const portfolio = [
   {
-    title: "Manageme - E-learning platform",
+    title: "Baby name generator - AI project",
+    summary:"AI-powered web app built with FastAPI and LangChain that suggests unique and meaningful names depending on user preferences",
+    description:
+      `This is a personal project that leverages the power of AI to help parents find the perfect name for their baby.
+      The application uses FastAPI for the backend and LangChain to interact with LLMs, providing users with unique and meaningful name suggestions based on their preferences.`,
+    features: [
+      "AI-powered name suggestions",
+      "User preference input",
+      "Unique and meaningful names",
+    ],
+    tools: ["FastAPI", "Python", "LangChain", "Groq API"],
+    source: "https://github.com/hammambys/human-name-generator",
+    link:"https://human-name-generator.onrender.com",
+    slug: "baby-name-generator",
+    screenshots:["/images/baby_name_2.png"],
+    img:"/images/baby_name_2.png"
+  },
+  {
+    title: "Manageme - Full-stack e-learning platform",
     summary:"An e-learning project management courses platform built with Angular and Spring Boot that enables interactive course management ",
     description:
       `This was an academic project at the end of second year in college which is an e-learning platform designed to manage training programs and educational courses related to project management. 
@@ -28,7 +46,7 @@ export const portfolio = [
     img:"/images/manageme_1.jpg"
   },
   {
-    title: "Landing page - Association Robotique ENSI",
+    title: "Association Robotique ENSI - Landing page",
     summary:"Landing page for the official website of Association Robotique ENSI",
     img: "/images/are.PNG",
     description:
@@ -42,7 +60,7 @@ export const portfolio = [
 
   },
   {
-    title: "Mumia - Marketplace website",
+    title: "Mumia - Full-stack e-commerce web application",
     summary:"A jumia.com clone built with React and Express.js that enables online buying and selling of products",
     img: "/images/mumia.PNG",
     description:
@@ -65,7 +83,7 @@ export const portfolio = [
     screenshots:["/images/mumia.png"]
   },
   {
-    title: "Cabinet Rabii Absi website",
+    title: "Cabinet Rabii Absi - Consulting firm website",
     summary:"A website for the consulting firm 'Cabinet Rabii Absi' built with Node.js and Express.js",
     img: "/images/consulting_2.jpg",
     description:
@@ -83,6 +101,20 @@ export const portfolio = [
     slug: "consulting",
     screenshots:["/images/consulting_1.jpg","/images/consulting_2.jpg"]
   },
+  {
+    title: "PowerZone - Landing page",
+    summary:"Landing page for local gym PowerZone built with HTML,CSS and Bootstrap",
+    img: "/images/powerzone.PNG",
+    description:
+      `This is a freelance project which consists of developing a landing page for gym PowerZone
+      The landing page features a modern design, reflecting the innovative spirit of the gym.`,
+    features: ["Landing page", "Contact form","Responsive design"],
+    tools: ["HTML", "CSS","Bootstrap"],
+    source:"https://github.com/hammambys/power-zone-website",
+    slug: "landing-page-powerzone",
+    screenshots:["/images/powerzone.png"]
+
+  }
 ];
 
 export const experience = [
