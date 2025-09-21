@@ -10,7 +10,7 @@ export default function Work() {
   }, []);
 
   return (
-    <div className="container mx-auto  mb-8 w-full min-h-screen   " id="work">
+    <div className="container mx-auto w-full min-h-screen   " id="work">
       <h1 className="p-16 text-3xl text-center font-bold">Some of my work</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

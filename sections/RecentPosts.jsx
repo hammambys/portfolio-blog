@@ -14,7 +14,7 @@ export default function RecentPosts() {
   }, []);
   return (
     <div className="mb-8 min-h-screen">
-      <div className="mb-8 text-center text-3xl  font-bold">ِCheck out my blog</div>
+      <div className="py-16 text-center text-3xl  font-bold">ِCheck out my blog</div>
 
       <div className="md:grid grid-cols-1 grid-cols-3 gap-4">
         {dataLoaded &&
