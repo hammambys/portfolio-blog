@@ -79,7 +79,7 @@ function Header ({sendDataToParent})  {
       </div>
 
       <div className="text-center flex items-center justify-center ">
-        <ul className="flex  hidden sm:block">
+        <ul className="flex">
           <li className="mr-7">
             <a
               href="https://www.linkedin.com/in/hammem-ben-younes-547869177/"
