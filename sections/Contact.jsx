@@ -36,7 +36,7 @@ export default function Contact() {
   return (
     <div className="container mx-auto px-10 mb-8 " id="contact">
       
-    <h1 className="text-3xl  mb-8 text-center font-bold">Contact</h1>
+    <h1 className="text-3xl  mb-8 text-center font-bold">Contact</h1> 
       <div className="md:flex md:justify-center font-normal">
         <div className="md:w-1/4 m-5 ">
           <p>
