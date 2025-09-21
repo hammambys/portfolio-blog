@@ -15,7 +15,7 @@ export default function Work() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {portfolioItems.map((item, index) => (
-          <PortfolioItem key={index} item={item} id={index} />
+          <PortfolioItem key={index} item={item} id={index} /> 
         ))}
       </div>
     </div>
