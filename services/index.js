@@ -28,6 +28,7 @@ export const getPosts = async () => {
               name
               slug
             }
+            readTime
           }
         }
       }
@@ -79,6 +80,7 @@ export const getPostDetails = async (slug) => {
           name
           slug
         }
+        readTime
       }
     }
   `;
@@ -104,6 +106,7 @@ export const getSimilarPosts = async (categories, slug) => {
         }
         createdAt
         slug
+        readTime
       }
     }
   `;
@@ -251,6 +254,7 @@ export const getRecentPosts = async () => {
         createdAt
         slug
         excerpt
+        readTime
       }
     }
   `;
