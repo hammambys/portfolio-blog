@@ -17,7 +17,7 @@ export default function About() {
             />
           </div>
           <div className="md:w-1/2 m-5">
-            <p className="mb-10 font-normal">{about.text}</p>
+            <p style={{ whiteSpace: "pre-line" }} className="mb-10 font-normal text-lg">{about.text}</p>
             <a
               href="#contact"
               className="p-4 bg-carafe text-sand_dollar hover:bg-brown transition duration-500 rounded dark:border flex justify-center "

@@ -16,6 +16,17 @@ export const PortfolioItem = ({ item, id }) => (
 
       <div className="px-6 py-4 h-1/3">
         <div className="font-medium text-lg  mb-2">{item.title}</div>
+        <div className="flex flex-wrap items-center gap-3 mt-2">
+            
+            {item.tools.map((tech, i) => (
+              <span
+                key={i}
+                className=" px-3 py-1 rounded-md text-xs "
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
       </div>
     </Link>
   </div>

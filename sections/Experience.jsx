@@ -27,16 +27,7 @@ export default function Experience() {
           </h3>
           <p className="font-normal">{experience.description}</p>
           <div className="flex flex-wrap items-center gap-3 mt-2">
-            {experience.platform && (
-              <span className="text-white px-3 py-1 rounded-md text-xs">
-                {experience.platform}
-              </span>
-            )}
-            {experience.project && (
-              <span className=" text-white px-3 py-1 rounded-md text-xs">
-                {experience.project}
-              </span>
-            )}
+            
             {experience.technologies.map((tech, i) => (
               <span
                 key={i}

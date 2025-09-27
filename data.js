@@ -1,7 +1,10 @@
 export const about = {
-  text: `Welcome to my corner of the digital world! I'm Hammem Ben Younes, a passionate developer
-  with a desire for turning ideas into interactive experiences. With a observant eye for detail and a love
-  for clean, efficient code, I specialize in crafting custom web, mobile and desktop solutions.
+  text: `Welcome to my corner of the digital world!
+  
+  I'm Hammem Ben Younes, a passionate developer with a desire for turning ideas into interactive experiences, an observant eye for detail and a love for clean, efficient code.
+  
+  I specialize in crafting custom web, mobile and desktop solutions.
+
   Let's collaborate to bring your vision to life!`,
   img: "/images/profil.jpg",
 };
