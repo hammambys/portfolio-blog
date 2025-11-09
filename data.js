@@ -29,6 +29,25 @@ export const portfolio = [
     img:"/images/baby_name_2.png"
   },
   {
+    title: "AI Business Advisor Council",
+    summary:"AI-powered web app that evaluates business ideas and expert feedback using Groq API",
+    img:"/images/advisor_1.png",
+    description:
+      `This is a personal project that leverages the power of AI to help entrepreneurs evaluate their business ideas.
+      It is like having a advisor council composed of Strategist, Technical expert and Legal advisor to provide feedback on your business idea.
+      The application uses LangChain to interact with LLMs via Groq API, providing users with comprehensive evaluations and expert advice.`,
+    features: [
+      "AI-powered business idea evaluation",
+      "Expert feedback from multiple perspectives",
+      "Comprehensive analysis and advice",
+    ],
+    tools: ["Streamlit", "Python", "LangChain", "Groq API"],
+    source:"https://github.com/hammambys/business-mentoring-council",
+    link: "https://business-advisor-council.streamlit.app",
+    slug: "business-advisor-council",
+    screenshots:["/images/advisor_1.png"],
+  },
+  {
     title: "Manageme - Full-stack e-learning platform",
     summary:"An e-learning project management courses platform built with Angular and Spring Boot that enables interactive course management ",
     description:
@@ -116,8 +135,8 @@ export const portfolio = [
     source:"https://github.com/hammambys/power-zone-website",
     slug: "landing-page-powerzone",
     screenshots:["/images/powerzone.png"]
-
   }
+  
 ];
 
 export const experience = [
