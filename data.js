@@ -48,7 +48,7 @@ export const portfolio = [
     screenshots: ["/images/advisor_1.png"],
   },
   {
-    title: "Manageme - Full-stack e-learning platform",
+    title: "Full-stack e-learning platform - Manageme",
     summary:
       "An e-learning project management courses platform built with Angular and Spring Boot that enables interactive course management ",
     description: `This was an academic project at the end of second year in college which is an e-learning platform designed to manage training programs and educational courses related to project management. 
@@ -65,10 +65,10 @@ export const portfolio = [
     source: "https://github.com/hammambys/manageme",
     slug: "manageme",
     screenshots: ["/images/manageme_1.jpg", "/images/manageme_2.jpg"],
-    img: "/images/manageme_1.jpg",
+    img: "/images/manageme_2.jpg",
   },
   {
-    title: "Association Robotique ENSI - Landing page",
+    title: "Landing page - Association Robotique ENSI",
     summary:
       "Landing page for the official website of Association Robotique ENSI",
     img: "/images/are.PNG",
@@ -104,10 +104,10 @@ export const portfolio = [
     screenshots: ["/images/mumia.png"],
   },
   {
-    title: "Cabinet Rabii Absi - Consulting firm website",
+    title: "Full-stack website for consulting firm Cabinet Rabii",
     summary:
       "A website for the consulting firm 'Cabinet Rabii Absi' built with Node.js and Express.js",
-    img: "/images/consulting_2.jpg",
+    img: "/images/consulting_3.png",
     description: `This is a freelance project which consists of developing a website for the consulting firm 'Cabinet Rabii Absi'
       The website includes a landing page, a blog, appointement scheduling system, an admin dashboard to manage clients and blog posts ...`,
     features: [
