@@ -15,6 +15,11 @@ export default function ProjectDetails() {
     <div className="container mx-auto p-10 flex justify-center  text-carafe dark:text-sand_dollar">
       <div className="w-3/4  border-2">
         <div className="p-14 font-normal">
+          <div className="mb-8">
+            <Link href="/#work" className="text-white hover:underline">
+              <p className="">← Back to projects</p>
+            </Link>
+          </div>
           <div className="text-center">
             <div className="text-2xl font-bold mb-8">{project.title}</div>
             <div>
@@ -64,12 +69,14 @@ export default function ProjectDetails() {
           <div className="my-8">
             <h2 className="text-2xl font-semibold mb-6">Screenshots</h2>
             {project.screenshots.map((screenshot, index) => (
-              <img
-                key={index}
-                src={screenshot}
-                alt={`Screenshot ${index + 1}`}
-                className="w-full mb-4"
-              />
+              <div className="border-2 mb-4">
+                <img
+                  key={index}
+                  src={screenshot}
+                  alt={`Screenshot ${index + 1}`}
+                  className="w-full"
+                />
+              </div>
             ))}
           </div>
 
@@ -85,12 +92,6 @@ export default function ProjectDetails() {
                 </span>
               ))}
             </div>
-          </div>
-
-          <div className="mt-8">
-            <Link href="/#work" className="text-white hover:underline">
-              <p className="">← Back to projects</p>
-            </Link>
           </div>
         </div>
       </div>

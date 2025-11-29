@@ -27,6 +27,7 @@ export const portfolio = [
     slug: "baby-name-generator",
     screenshots: ["/images/baby_name_2.png"],
     img: "/images/baby_name_2.png",
+    status: "Live",
   },
   {
     title: "AI Business Advisor Council",
@@ -46,6 +47,7 @@ export const portfolio = [
     link: "https://business-advisor-council.streamlit.app",
     slug: "business-advisor-council",
     screenshots: ["/images/advisor_1.png"],
+    status: "Live",
   },
   {
     title: "Full-stack e-learning platform - Manageme",
@@ -66,6 +68,7 @@ export const portfolio = [
     slug: "manageme",
     screenshots: ["/images/manageme_1.jpg", "/images/manageme_2.jpg"],
     img: "/images/manageme_2.jpg",
+    status: "Down",
   },
   {
     title: "Landing page - Association Robotique ENSI",
@@ -79,6 +82,7 @@ export const portfolio = [
     link: "http://www.ar-ensi.tn/",
     slug: "landing-page-are",
     screenshots: ["/images/are.png"],
+    status: "Down",
   },
   {
     title: "Mumia - Full-stack e-commerce web application",
@@ -102,6 +106,7 @@ export const portfolio = [
     source: "https://github.com/hammambys/mumia-app",
     slug: "mumia",
     screenshots: ["/images/mumia.png"],
+    status: "Down",
   },
   {
     title: "Full-stack website for consulting firm Cabinet Rabii",
@@ -121,6 +126,7 @@ export const portfolio = [
     source: "https://github.com/hammambys/site-consulting",
     slug: "consulting",
     screenshots: ["/images/consulting_1.jpg", "/images/consulting_2.jpg"],
+    status: "Down",
   },
   {
     title: "PowerZone - Landing page",
@@ -134,6 +140,7 @@ export const portfolio = [
     source: "https://github.com/hammambys/power-zone-website",
     slug: "landing-page-powerzone",
     screenshots: ["/images/powerzone.png"],
+    status: "Down",
   },
 ];
 
