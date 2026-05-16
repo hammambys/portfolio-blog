@@ -25,24 +25,24 @@ export default function Home() {
           </div>
         </div>
 
-          <div className="flex justify-center">
-            <a href="#about">
+        <div className="flex justify-center">
+          <a href="#about">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              strokeWidth="2"
               stroke="currentColor"
-              class="w-8 h-8 animate-bounce-down"
-              >
+              className="w-8 h-8 animate-bounce-down"
+            >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M19 9l-7 7-7-7"
-                />
+              />
             </svg>
-                </a>
-          </div>
+          </a>
+        </div>
 
       </section>
       <section>

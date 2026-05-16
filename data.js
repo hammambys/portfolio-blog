@@ -11,6 +11,21 @@ export const about = {
 
 export const portfolio = [
   {
+    title: "AI Resume tailor",
+    summary: "AI-powered web app that tailors resumes to job descriptions",
+    description: `This is a personal project that leverages the power of AI to help job seekers tailor their resumes to job descriptions.`,
+    features: [
+      "AI-powered resume tailoring",
+      "Job description analysis",
+      "Resume optimization",
+    ],
+    tools: ["Flask", "Python", "Groq API", "React"],
+    source: "https://github.com/hammambys/ai-resume-tailor",
+    slug: "ai-resume-tailor",
+    screenshots: [],
+    status: "In Progress",
+  },
+  {
     title: "AI Baby name generator",
     summary:
       "AI-powered web app built with FastAPI and LangChain that suggests unique and meaningful names depending on user preferences",

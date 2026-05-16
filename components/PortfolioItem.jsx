@@ -19,7 +19,7 @@ export const PortfolioItem = ({ item, id }) => (
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border font-medium h-10 ">
             <span
               className={`h-3 w-3 rounded-full  animate-pulse  
-      ${item.status === "Live" ? "bg-green" : "bg-red"}
+      ${item.status === "Live" ? "bg-green" : item.status === "In Progress" ? "bg-yellow" : "bg-red"} 
     `}
             />
             {item.status}

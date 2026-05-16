@@ -36,6 +36,7 @@ module.exports = {
       sand_dollar: "#E4D4C8", // lightest
       green: "#00A86B",
       red: "#FF0000",
+      yellow: "#FFCC00",
     },
   },
   variants: {
