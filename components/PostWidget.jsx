@@ -22,27 +22,36 @@ const PostWidget = ({ categories, slug }) => {
   }, [slug]);
 
   return (
-    <div className="bg-white border dark:border-sand_dollar shadow-lg rounded-lg p-8 pb-12 mb-8 dark:sand_dollar">
-      <h3 className="text-xl mb-8 dark:text-sand_dollar border-b  pb-4">{slug ? 'Related Posts' : 'Recent Posts'}</h3>
-      {relatedPosts.map((post, index) => (
-        <div key={index} className="flex items-center w-full mb-4">
-          {/*<div className="w-16 flex-none">
-            <Image
-              loader={grpahCMSImageLoader}
-              alt={post.title}
-              height={60}
-              width={60}
-              unoptimized
-              className="align-middle rounded-full"
-              src={post.featuredImage.url}
-            />
-          </div>*/}
-          <div className="flex-grow ml-4">
-            <p className=" font-normal">{moment(post.createdAt).format('MMM DD, YYYY')}</p>
-            <Link href={`/post/${post.slug}`} className="" key={index}>{post.title}</Link>
+    <div className="bg-white dark:bg-[#251b14] border border-tan/10 dark:border-sand_dollar/5 shadow-lg rounded-3xl p-8 mb-8">
+      <h3 className="text-xl font-bold mb-8 relative pb-4">
+        {slug ? 'Related Posts' : 'Recent Posts'}
+        <span className="absolute bottom-0 left-0 w-12 h-1 bg-brown rounded-full"></span>
+      </h3>
+      <div className="space-y-6">
+        {relatedPosts.map((post, index) => (
+          <div key={index} className="group flex items-center w-full gap-4">
+            <div className="flex-none relative w-16 h-16 rounded-xl overflow-hidden border border-tan/10">
+              <Image
+                loader={grpahCMSImageLoader}
+                alt={post.title}
+                layout="fill"
+                objectFit="cover"
+                unoptimized
+                className="transition-transform duration-500 group-hover:scale-110"
+                src={post.featuredImage.url}
+              />
+            </div>
+            <div className="flex-grow">
+              <p className="text-xs font-bold uppercase tracking-wider opacity-60 mb-1">
+                {moment(post.createdAt).format('MMM DD, YYYY')}
+              </p>
+              <Link href={`/post/${post.slug}`} className="font-bold text-carafe/90 dark:text-sand_dollar/90 group-hover:text-brown transition-colors line-clamp-2 leading-tight">
+                {post.title}
+              </Link>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
