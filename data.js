@@ -22,8 +22,10 @@ export const portfolio = [
     tools: ["Flask", "Python", "Groq API", "React"],
     source: "https://github.com/hammambys/ai-resume-tailor",
     slug: "ai-resume-tailor",
-    screenshots: [],
-    status: "In Progress",
+    screenshots: ["/images/resume_tailor_1.png"],
+    img: "/images/resume_tailor_1.png",
+    status: "Live",
+    link: "https://ai-resume-tailor-1.vercel.app",
   },
   {
     title: "AI Baby name generator",
